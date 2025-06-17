@@ -21,9 +21,10 @@ ________________________________________________________________________________
 01. Write the MATLAB code to import a graph. Use the following source and destination data.
 
    source = [1,1,2,3,4]
+   
    destination = [2,3,4,4,5]
 
-3. Using the imported data, draw the graph.
+02. Using the imported data, draw the graph.
 
    ![Q1 Q2](https://github.com/user-attachments/assets/6a01d0de-456c-4d3b-af9a-9a2e11f85a31)
 
