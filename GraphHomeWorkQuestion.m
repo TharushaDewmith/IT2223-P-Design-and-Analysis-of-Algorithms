@@ -37,7 +37,7 @@ figure;
 plot(subG, 'Layout', 'force');
 title('Subgraph with Nodes 1, 2, 4');
 
-%% 4. Display adjacent vertices (neighbors)
+% 4. Display adjacent vertices (neighbors)
 disp('Adjacent Vertices:');
 for i = 1:numnodes(G)
     nbrs = neighbors(G, i);
@@ -45,20 +45,20 @@ for i = 1:numnodes(G)
     disp(nbrs');
 end
 
-%% 5. Plot graph with edge labels
+% 5. Plot graph with edge labels
 figure;
 p = plot(G, 'Layout', 'force');
 edgeLabels = 1:numedges(G);
 labeledge(p, source, destination, edgeLabels);
 title('Graph with Edge Labels');
 
-%% 6. Plot graph with node labels
+% 6. Plot graph with node labels
 figure;
 p = plot(G, 'Layout', 'force');
 labelnode(p, 1:numnodes(G), arrayfun(@num2str, 1:numnodes(G), 'UniformOutput', false));
 title('Graph with Node Labels');
 
-%% 7. Greedy graph coloring
+% 7. Greedy graph coloring
 color = zeros(numnodes(G), 1); % Initialize color array
 for node = 1:numnodes(G)
     neighborColors = color(neighbors(G, node));
@@ -74,7 +74,7 @@ colormap(jet(max(color)));
 colorbar;
 title('Graph Coloring');
 
-%% 8. Compute and plot shortest path from node 1 to 5
+% 8. Compute and plot shortest path from node 1 to 5
 [spath, spathLength] = shortestpath(G, 1, 5);
 
 % Display result
