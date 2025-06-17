@@ -1,4 +1,5 @@
 %% 1. Define source and destination arrays
+
 source = [1, 1, 2, 3, 4];
 destination = [2, 3, 4, 4, 5];
 
