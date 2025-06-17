@@ -1,4 +1,21 @@
-%% 1. Define source and destination arrays
+%   Graph Question :
+
+%   01. Write the MATLAB code to import a graph. Use the following source and destination data.
+%   02. Using the imported data, draw the graph.
+%   03. Write the MATLAB code to find and display the subgraph for the given nodes.
+%   04. Identify and display the adjacent vertices for each node.
+%   05. Label the edges of the graph.
+%   06. Label the nodes of the graph.
+%   07. Write the MATLAB code to color the graph.(graph coloring)
+%   08. Write the MATLAB code to find the shortest path from npode 1 to node 5
+
+%   source = [1,1,2,3,4]
+%   destination = [2,3,4,4,5]
+
+
+% Answers :
+
+% 1. Define source and destination arrays
 
 source = [1, 1, 2, 3, 4];
 destination = [2, 3, 4, 4, 5];
@@ -6,12 +23,12 @@ destination = [2, 3, 4, 4, 5];
 % Create a graph object
 G = graph(source, destination);
 
-%% 2. Plot full graph
+% 2. Plot full graph
 figure;
 plot(G, 'Layout', 'force');
 title('Graph Visualization');
 
-%% 3. Define selected nodes and create subgraph
+% 3. Define selected nodes and create subgraph
 selectedNodes = [1, 2, 4];
 subG = subgraph(G, selectedNodes);
 
